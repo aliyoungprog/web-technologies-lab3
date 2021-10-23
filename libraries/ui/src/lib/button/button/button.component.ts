@@ -21,11 +21,9 @@ export class ButtonComponent implements OnInit {
     this.hover = false;
   }
 
-  colors = new Map<String, string[]>()
+  colors = new Map<string, string[]>()
     .set('primary', ['hsl(145, 63%, 49%)', 'hsl(145, 63%, 40%)'])
     .set('accent', ['hsl(190, 63%, 49%)', 'hsl(190, 63%, 40%)']);
-
-  constructor() {}
 
   ngOnInit(): void {}
 
@@ -34,7 +32,6 @@ export class ButtonComponent implements OnInit {
     if (res) {
       return res;
     }
-
     return [];
   }
 }
